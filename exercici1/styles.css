@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box; /* hace que los paddings se queden en su caja! */
+}
+
+html, body {
+    height: calc(100vh - 30px);
+}
+
+body {
+    background-color: #fff;
+    /* background-color: #fff; */
+    margin: 0;
+    /* padding: 15px 0px 15px 0px; */ /* top right bottom left */
+    padding: 45px 0px; /* top bottom -- right left */
+}
+
+.container { /* en container encontramos todos los elementos centrados */
+    width: 95%; /* centrado en pantalla + margenes en los lados, imitando el wireframe propuesto de 1920px de width */
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    background-color: white;
+}
+
+.first {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 34.07%; /* respecto al 100% del height del container */
+    background: #000;
+    padding: 20px 20px;
+}
+
+    .group1 {
+        display: inline-flex;
+        background: #27394E;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 20px; /* separación entre group 1 y 2 */
+        padding: 37px 25px;
+    }
+
+        .R1 {
+            background: #EA584B;
+            width: 15.75%;
+            height: 100%;
+            margin-right: 10px;
+        }
+
+        .R2 {
+            background: #EA584B;
+            width: 68.49%;
+            height: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .R3 {
+            background: #EA584B;
+            width: 15.75%;
+            height: 100%;
+            margin-left: 10px;
+        }
+
+    .group2 {
+        display: inline-flex;
+        width: 100%;
+        height: 50%;
+        background: #F0763A;
+        padding: 37px 25px;
+    }
+
+        .RU {
+            background: #FFCC5E;
+            width: 100%;
+            height: 100%;
+        }
+
+.second {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    height: 36.07%; /* respecto al 100% del height del container */
+    background: #000;
+    margin-top: 20px; /* separado del .first */
+    padding: 20px 20px;
+}
+
+    .group3 {
+        display: inline-flex;
+        flex-direction: column;
+        background: #44465E;
+        width: 68.68%; /* la otra parte la tiene el .group4 */
+        height: 100%;
+        /* margin-left: 20px; */
+        margin-right: 10px;
+    }
+
+        .groupcolumn {
+            display: inline-flex;
+            flex-direction: row;
+            width: 100%;
+            height: 64.29%;
+        }
+
+            .group31 {
+                display: inline-flex;
+                flex-direction: column;
+                width: 50%;
+                height: 100%;
+                padding: 30px 20px 15px 30px;
+            }
+
+                .R4 {
+                    background: #1664A4;
+                    /* background: blue; */
+                    /* width: 100%; */
+                    height: 100%;
+                    margin-bottom: 30px;
+                }
+
+                .R5 {
+                    background: #1664A4;
+                    /* background: red; */
+                    /* width: 100%; */
+                    height: 100%;
+                    /* margin-bottom: 20px; */
+                }
+
+            .group32 {
+                display: inline-flex;
+                flex-direction: column;
+                /* background: green; */
+                width: 50%;
+                height: 100%;
+                padding: 30px 30px 15px 20px;
+            }
+
+                .R6 {
+                    background: #1664A4;
+                    /* background: green; */
+                    /* width: 100%; */
+                    height: 100%;
+                    margin-bottom: 30px;
+                }
+
+                .R7 {
+                    background: #1664A4;
+                    /* background: yellow; */
+                    /* width: 100%; */
+                    height: 100%;
+                    /* margin-bottom: 20px; */
+                }
+
+        .group33 {
+            display: inline-flex;
+            flex-direction: row;
+            /* width: 100%; */
+            height: 35.71%;
+            padding: 15px 30px 30px 30px;
+        }
+
+            .R8 {
+                background: #6399BB;
+                width: 100%;
+                height: 100%;
+            }
+
+    .group4 {
+        display: inline-flex;
+        flex-direction: column;
+        background: #F94C47;
+        width: 31.32%;
+        height: 100%;
+        margin-left: 10px;
+        /* margin-right: 20px; */
+        padding: 30px;
+    }
+
+        .R9 {
+            background: #FFE380;
+            /* width: 87.77%; */
+            height: 14.29%;
+        }
+
+        .R10 {
+            background: #FFE380;
+            /* width: 87.77%; */
+            height: 14.29%;
+            margin-top: 20px;
+        }
+
+.third {
+    display: inline-flex;
+    width: 100%;
+    height: 12.02%; /* respecto al 100% del height del container */
+    background: #000;
+    margin-top: 20px; /* separado del .third */
+    padding: 37px 25px;
+}
+
+.rectangle {
+    background: #E4A434;
+    width: 100%;
+    height: 100%;
+}
