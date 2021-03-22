@@ -1,0 +1,56 @@
+.bg {
+    background: url('./cap-1.png') no-repeat center center/cover;
+}
+
+main > * {
+    background-color: transparent;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+/* Definimos el GRID container */
+main {
+    display: grid;
+    grid-template-areas:
+        "footer"
+        "contenido"
+        "izquierda"
+        "derecha"
+        "header";
+}
+
+/* Desktop */
+@media (min-width: 500px) {
+    main {
+        grid-template-areas:
+        "header header header"
+        "contenido izquierda derecha"
+        "footer footer footer";
+    }
+}
+
+/* Nombramos los elementos */
+header {
+    grid-area: header;
+}
+
+aside:first-of-type {
+    grid-area: izquierda;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.30);
+    color: #ED9C9F;
+}
+
+article {
+    grid-area: contenido;
+}
+
+aside:last-of-type {
+    grid-area: derecha;
+}
+
+footer {
+    grid-area: footer;
+}
