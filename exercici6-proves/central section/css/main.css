@@ -1,0 +1,231 @@
+main {
+    display: grid;
+    height: 100vh;
+    width: 80%;
+    padding: 0px 150px 0px 150px;
+    grid-gap: 10px;
+    font-family: 'Montserrat';
+    grid-template-columns: 2fr 1fr;
+}
+
+main > * {
+    display: grid; /* flex */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.e0 {
+    display: grid;
+    grid-template-rows: 95% 5%;
+}
+
+.e1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.e11 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 3fr 0.2fr 0.6fr 0.3fr;
+    border: 0.25px solid #8B524A;
+    box-sizing: border-box;
+}
+
+    .date1 {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        background: url('./img/R4.jpeg') no-repeat center center/cover;
+        background-color: red;
+        grid-template-rows: 95% 5%;
+        justify-content: left;
+    }
+
+        .date11,
+        .date21,
+        .date31,
+        .date41 {
+            background: transparent;
+        }
+
+        .date12,
+        .date22,
+        .date32,
+        .date42 {
+            background: transparent;
+            padding: 0px 0px 0px 10px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 0.02em;
+
+            color: #D2CABE;
+        }
+
+    .cat {
+        background-color: #F94C47;
+        justify-content: left;
+        padding: 0px 10px 0px 10px;
+    }
+
+        .cat2 {
+            text-decoration: none;
+            color: #fff;
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+    .lorem {
+        background: #D8D3D3;
+        padding: 0px 15px 0px 15px;
+        font-size: 12px;
+    }
+
+    .mas {
+        background: #D8D3D3;
+        justify-content: left;
+        padding: 0px 10px 0px 10px;
+    }
+
+        .leer {
+            text-decoration: none;
+            color: #757575;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+        }
+
+.e12 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 3fr 0.2fr 0.6fr 0.3fr;
+    border: 0.25px solid #8B524A;
+    box-sizing: border-box;
+}
+
+    .date2 {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        background: url('./img/R4.jpeg') no-repeat center center/cover;
+        background-color: blue;
+        grid-template-rows: 95% 5%;
+        justify-content: left;
+    }
+
+.e13 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 3fr 0.2fr 0.6fr 0.3fr;
+    border: 0.25px solid #8B524A;
+    box-sizing: border-box;
+}
+
+    .date3 {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        background: url('./img/R4.jpeg') no-repeat center center/cover;
+        background-color: yellow;
+        grid-template-rows: 95% 5%;
+        justify-content: left;
+    }
+
+.e14 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 3fr 0.2fr 0.6fr 0.3fr;
+    border: 0.25px solid #8B524A;
+    box-sizing: border-box;
+}
+
+    .date4 {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        background: url('./img/R4.jpeg') no-repeat center center/cover;
+        background-color: green;
+        grid-template-rows: 95% 5%;
+        justify-content: left;
+    }
+
+.e2 {
+    background-color: transparent;
+    display: grid;
+    height: 20%;
+}
+
+.e21,
+.e22 {
+    background-color: #8B524A;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 4px;
+    padding: 10px 0px 10px 0px;
+}
+
+.e3 {
+    display: grid;
+    background-color: #A52A2A;
+    margin-top: 4px;
+    height: 100%;
+    align-items: center;
+}
+
+.e31 {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* -- */
+
+/* -- */
+
+@media (max-width: 1087px) {
+    main {
+        padding: 0px 100px 0px 100px;
+    }
+
+    .e11,
+    .e12,
+    .e13,
+    .e14 {
+        grid-template-rows: 2fr 0.2fr 0.6fr 0.1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 609px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr 1fr 2fr;
+    }
+}
+
+@media (max-width: 460px) {
+    .e3 {
+        margin-top: 10px;
+    }
+}
